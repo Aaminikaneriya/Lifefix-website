@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+/* Navbar Gradient */
+.custom-navbar {
+  background: linear-gradient(90deg, #3a1b5a, #4b285a, #3a1b5a);
+  padding: 12px 25px;
+}
+body {
+  padding-top: 80px;   /* navbar height */
+}
+.custom-navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+/* =========Logo========== */
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ============links============== */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 18px;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+/* ===============hover=============== */
+.navbar-nav .nav-link:hover {
+  color: #d6b3ff !important;
+}
+
+/* ===========search-box================== */
+.search-input {
+  border-radius: 20px;
+  border: none;
+  padding: 6px 15px;
+  margin-right: 8px;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #a855f7;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 15px;
+  border: none;
+}
+
+.search-btn:hover {
+  background-color: #c084fc;
+}
+
+/* mobile icon color */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+/* https://blog.srcsdoon.com/wp-content/uploads/2024/08/laureate-Shimla-39.png */
+/* https://img.freepik.com/premium-vector/isometric-big-data-network-visualization-advanced-analytics-interacting-data-analysis-research-audit-demographics-artificial-intelligence-planning-statistics-digital-dna-structure-management_589019-2851.jpg */
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url("https://img.freepik.com/premium-vector/isometric-big-data-network-visualization-advanced-analytics-interacting-data-analysis-research-audit-demographics-artificial-intelligence-planning-statistics-digital-dna-structure-management_589019-2851.jpg")
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* Dark purple overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #150019, #250024, #150019);
+  opacity: 0.85;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* font-size: 48px;
+  font-weight: 700; */
+}
+
+.hero-subtitle {
+  /* color: #d6b3ff;
+  margin-top: 10px;
+  font-size: 18px; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #d6b3ff;
+  margin-top: 12px;
+}
+
+/* AGE BOXES */
+.age-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 35px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(8px);
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+.age-box img
+{
+  border-radius: 50%;
+  border: 8px solid rgb(253, 174, 253);
+  
+}
+
+.age-box h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.age-box p {
+  color: #d6b3ff;
+  font-size: 16px;
+}
+
+/* Hover effect */
+.age-box:hover {
+  color: white;
+  transform: translateY(-12px) scale(1.05);
+  background: linear-gradient(135deg, #341148);
+  /* background: linear-gradient(135deg, #F5C77A); */
+
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 34px;
+  }
+}
+
+/* HERO SECTION */
+.hero {
+  height: 70vh;
+  background: linear-gradient(rgba(20,0,34,0.8), rgba(20,0,34,0.8)),
+              url("https://png.pngtree.com/png-clipart/20231006/original/pngtree-children-in-school-setting-the-time-on-an-alarm-clock-vector-png-image_12970382.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #d8b4ff;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #e9d8ff;
+}
+
+/* QUOTES SECTION */
+.quotes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.quote-card {
+  background: #2a0044;
+  padding: 25px;
+  width: 260px;
+  border-radius: 15px;
+  text-align: center;
+  font-style: italic;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.quote-card p
+{
+  color: #c77dff;
+}
+
+.quote-card:hover {
+  transform: translateY(-8px);
+  background: #3b0066;
+}
+
+/* QUESTIONS SECTION */
+.questions {
+  padding: 60px 40px;
+}
+
+.questions h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1d0019;
+  font-size: 3rem;
+  font-weight: 1000;
+}
+
+.question-box {
+  background: #1f0033;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-box h3 {
+  color: #c77dff;
+  margin-bottom: 10px;
+}
+
+.question-box p {
+  color: #e6d6ff;
+  line-height: 1.6;
+}
+
+.question-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(199,125,255,0.3);
+}
+
+
